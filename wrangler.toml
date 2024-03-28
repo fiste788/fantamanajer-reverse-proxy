@@ -1,6 +1,17 @@
-name = "fantamanajer-cloudflare"
+name = "reverse-proxy-fantamanajer"
 main = "src/worker.ts"
 compatibility_date = "2023-07-10"
+
+[placement]
+mode = "smart"
+
+[vars]
+API_HOST = "api.fantamanajer.it"
+API_PROTOCOL = "https"
+API_PORT = "443"
+
+[env.dev]
+vars = { API_HOST = "dev.fantamanajer.it", API_PROTOCOL = "https", API_PORT = "443" }
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.

@@ -16,7 +16,7 @@ export default {
 		// pass the modified url back to the request,
 
 		let response = await fetch(url, request);
-		console.log('Fetched', response);
+		console.log('Fetched', response.url);
 		return response;
 	},
 };

@@ -1,4 +1,4 @@
-name = "reverse-proxy-fantamanajer"
+name = "fantamanajer-reverse-proxy"
 main = "src/index.ts"
 compatibility_date = "2023-07-10"
 workers_dev = false

@@ -1,5 +1,5 @@
 {
-	"name": "fantamanajer-cloudflare",
+	"name": "fantamanajer-reverse-proxy",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
@@ -10,8 +10,8 @@
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20241011.0",
-		"vitest": "^2.1.2",
 		"typescript": "^5.6.3",
+		"vitest": "^2.1.2",
 		"wrangler": "^3.80.4"
 	}
 }

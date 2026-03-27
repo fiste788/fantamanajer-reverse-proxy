@@ -6,12 +6,12 @@
 		"deploy": "wrangler deploy src/index.ts",
 		"dev": "wrangler dev src/index.ts",
 		"start-stackblitz": "WRANGLER_SEND_METRICS=false wrangler dev src/index.ts",
+		"cf-typegen": "wrangler types",
 		"test": "vitest run"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20241011.0",
-		"typescript": "^5.6.3",
-		"vitest": "^2.1.2",
-		"wrangler": "^3.80.4"
+		"typescript": "^5.9.3",
+		"vitest": "^4.1.2",
+		"wrangler": "^4.78.0"
 	}
 }

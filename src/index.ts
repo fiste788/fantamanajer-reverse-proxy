@@ -12,7 +12,7 @@ export default {
 
 		// remove the first occurence of /blog
 		// so it requests / of the proxy domain
-		url.pathname = url.pathname.replace('/api', '');
+		url.pathname = url.pathname.replace('/api', '').replace('/backend', '');
 		// pass the modified url back to the request,
 
 		let response = await fetch(url, request);

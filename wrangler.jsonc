@@ -1,0 +1,38 @@
+{
+	"name": "fantamanajer-reverse-proxy",
+	"main": "src/index.ts",
+	"compatibility_date": "2023-07-10",
+	"workers_dev": false,
+	"routes": [
+		{
+			"pattern": "fantamanajer.it/api/*",
+			"zone_name": "fantamanajer.it"
+		}
+	],
+	"placement": {
+		"region": "aws:eu-central-1"
+	},
+	"vars": {
+		"API_HOST": "api.fantamanajer.it",
+		"API_PROTOCOL": "https",
+		"API_PORT": "443"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"env": {
+		"dev": {
+			"vars": {
+				"API_HOST": "dev.fantamanajer.it",
+				"API_PROTOCOL": "https",
+				"API_PORT": "443"
+			},
+			"routes": [
+				{
+					"pattern": "*.fantamanajer.it/api/*",
+					"zone_name": "fantamanajer.it"
+				}
+			]
+		}
+	}
+}
